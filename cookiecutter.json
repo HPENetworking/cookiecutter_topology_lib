@@ -1,0 +1,11 @@
+{
+    "library_name": "your_library",
+    "author": "Hewlett Packard Enterprise Development LP",
+    "email": "hpe-networking@lists.hp.com",
+    "repo_url": "https://github.com/HPENetworking/topology_lib_{{ cookiecutter.library_name }}",
+    "doc_url": "{{ cookiecutter.repo_url }}/tree/master/doc",
+    "project_name": "{{ cookiecutter.library_name }} Communication Library for Topology",
+    "short_description": "A short description of your library.",
+    "year": "2016",
+    "version": "0.1.0"
+}
