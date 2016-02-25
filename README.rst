@@ -43,6 +43,8 @@ Generate a new Topology Communication Library using this template:
    pip install cookiecutter
    cookiecutter git@github.com:HPENetworking/cookiecutter_topology_lib.git
 
+Once that is ready, add your library functions to
+``lib/topology_lib_{{cookiecutter.library_name}}/library.py``.
 
 .. _Tox: https://testrun.org/tox/
 .. _pytest: http://pytest.org/
