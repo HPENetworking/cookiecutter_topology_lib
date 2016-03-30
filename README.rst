@@ -46,6 +46,16 @@ Generate a new Topology Communication Library using this template:
 Once that is ready, add your library functions to
 ``lib/topology_lib_{{cookiecutter.library_name}}/library.py``.
 
+That file includes documentation that can help you with the creation of your
+functions.
+
+Even better, write a test case *before* you add your library functions and then
+code them. To test your library code you can run ``tox`` in your library root
+directory.
+
+Be aware that the generated ``tox.ini`` file will run ``flake8`` in all your
+files to ensure PEP8 compliance before even running your tests.
+
 .. _Tox: https://testrun.org/tox/
 .. _pytest: http://pytest.org/
 .. _doctest: https://docs.python.org/3/library/doctest.html

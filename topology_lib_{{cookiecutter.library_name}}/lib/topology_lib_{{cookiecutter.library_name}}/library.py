@@ -25,12 +25,32 @@ from __future__ import print_function, division
 # Add your library functions here.
 
 
-def your_function_here():
+def your_function_here(enode, your_param, shell=None):
     """
     Document your function here.
+
+    :param topology.platforms.base.BaseNode enode: Engine node to communicate
+     with.
+    :param bool your_param: This is an example parameter, read the comment
+     below.
+    :param str shell: Shell name to execute commands.
     """
     pass
 
+    # Usually, the library functions use the parameters to build a command that
+    # is to be sent to the enode, for example:
+    #
+    # command = 'echo "something"'
+    # if your_param:
+    #     command = '{command} "and something else"'.format(command=command)
+    #
+    # Then, the enode is used to send the command:
+    #
+    # enode('the command to be sent', shell=shell)
+
 __all__ = [
+    # The Topology framework loads the functions that are in this list to be
+    # used as libraries, so, if you want your function to be loaded, add it
+    # here.
     'your_function_here'
 ]
